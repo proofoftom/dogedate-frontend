@@ -1,15 +1,24 @@
-# Quasar starter app with JWT Auth
+# DogeDate Frontend
 
-Laravel API URL: https://github.com/XristMisyris/quasar-starter-backend
+![Main](dogedate.png)
+
+DogeDate API URL: https://github.com/tommycox/dogedate-backend
 
 ## Getting Started
 
-Clone the repository and install the dependencies:  
-`npm install`
+Change directories to the frontend (which you cloned when setting up the backend):  
+`cd ../dogedate-frontend`
+
+Install dependencies:  
+`npm install` or `yarn`
 
 Then start a development server:  
 `quasar dev`
 
-![Index](https://i.imgur.com/WXpdy7O.png)
-![Login](https://i.imgur.com/pkUAYQM.png)
-![Main](https://i.imgur.com/k16U1EW.png)
+This will automatically open the app in your default broswer.
+
+Login with:
+```
+username: tommy.cox@protonmail.com
+password: quasar
+```
