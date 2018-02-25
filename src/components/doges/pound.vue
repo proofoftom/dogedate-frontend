@@ -9,7 +9,7 @@
           <!-- Todo: A doge should be its own component -->
           <a :href="'#/doges/' + doge.id">
             <div class="text-center doge-pic-wrapper">
-              <img alt="doge image" :title="doge.name" :src="doge.image" class="doge-pic">
+              <img :alt="doge.name" :title="doge.name" :src="doge.image" class="doge-pic">
             </div>
           </a>
           <q-card-separator />
@@ -20,7 +20,7 @@
               checked-icon = "pets"
               unchecked-icon = "pets"
               :label = "doge.liked_count"
-              :model: = "currentOwner.doges_liked"
+              :model = "currentOwner.doges_liked"
               v-bind:value = "doge.id"
               v-bind:id = "doge.id"
             />
@@ -34,7 +34,7 @@
             <img class="gene-icon" alt="double helix" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGbSURBVFhH7dZNK0RRHMfxIZQF3oCFlaJkwdIGSSRFsvMOkBKRiLJiRbFSVjbegawUL0CJPCyQN0BRytP3e5tbspk5985kFvOrTzlH53/uveeeMzdTTjmlnBd8oy5qJUstrPEatQJzBQe3RK1kaYM1bqNWYA7g4Gn0Z/9OylrBGYGDz1GFo2w7iXEEpxrXsMCkHYFZgmN9/N5AogzgC+/osSPPDOMDju2zI03W4Z34Jg+hCWfZvlxWkToV2IIFvatl1GAt2/47aWwTBY3vQTzhKX5vz0Ycw/+5XFMoSlzPR8QT+Yh9GhtwvW/QiaKmAfuIH/UlutCBNKdm3qnHHuIL0Cd24cUVNW7FezjpG+axApfDvid0o+BxJ7jerrMTnaAZcVoRb01f1EUULJWI19ziC/CUzLUNd+CFp842LOhBNIiQg8hDLFXGYCHXuNeOPON29em4ZB7nieL+foAXMGtHYObgWM8Glyw4E7DABSyQ5ud4FME5hINn8C8fJHdwcJpPsnZYw8+74PjWOzjN8erJaI3nqFVOOaWXTOYHPHK+Rva+tQEAAAAASUVORK5CYII=">
             <h6>Genes</h6>
             <q-card-separator />
-            <div id="genes" class="text-center">
+            <div id="genes">
               <q-chip v-for="gene in doge.genes" :key="gene.id" small tag color="black">
                 <a href="#">
                   {{ gene }}
@@ -53,7 +53,7 @@
   width: 300px;
 }
 .q-card:hover {
-  transform: scale(1.05) rotateZ(-2deg);
+  transform: scale(1.02) rotateZ(-1deg);
   transition: all .4s ease-in-out;
 }
 .q-card a {
@@ -75,12 +75,12 @@
   color: white;
 }
 .q-chip:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: all .1s ease-in-out;
   cursor: pointer;
 }
 .pop:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all .1s ease-in-out;
 }
 </style>

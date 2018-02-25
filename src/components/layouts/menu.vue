@@ -17,18 +17,18 @@
           <q-item-side icon="fa-institution" />
           <q-item-main label="The PounÐ"/>
         </q-side-link>
-        <q-side-link item to="/pack">
-          <q-item-side icon="grain" />
-          <q-item-main label="Your Pack"/>
-        </q-side-link>
         <q-side-link item to="/date">
           <q-item-side icon="fa-heartbeat" />
           <q-item-main label="Ðoge Ðate"/>
         </q-side-link>
+        <q-side-link item to="#">
+          <q-item-side icon="fa-trophy" />
+          <q-item-main label="Ðoge Show"/>
+        </q-side-link>
         <hr>
-        <q-side-link item to="/profile">
-          <q-item-side icon="account_circle" />
-          <q-item-main label="Profile" />
+        <q-side-link item to="/pack">
+          <q-item-side icon="grain" />
+          <q-item-main label="My Pack"/>
         </q-side-link>
         <q-item class="item" :go-back="'/'" @click="logout()">
           <q-item-side>

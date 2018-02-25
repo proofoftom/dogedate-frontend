@@ -34,7 +34,6 @@ export default new VueRouter({
         { path: 'pound', component: load('doges/pound'), meta: { title: 'Adopt a Ðoge' } },
         { path: 'pack', component: load('owners/pack'), meta: { title: 'Your Pack' } },
         { path: 'date', component: load('doges/date'), meta: { title: 'Find Love' } },
-        { path: 'profile', component: load('owners/profile'), meta: { title: 'Profile' } },
         // Perhaps move this outside of auth, allowing the public to check out pups.
         { path: 'doges/:id', component: load('doges/profile') }
       ]
