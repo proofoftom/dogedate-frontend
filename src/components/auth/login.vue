@@ -36,7 +36,7 @@
 
     methods: {
       submit () {
-        auth.login(this.credentials, 'profile')
+        auth.login(this.credentials, 'pack')
       }
     },
 

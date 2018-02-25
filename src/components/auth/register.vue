@@ -40,7 +40,7 @@
 
     methods: {
       submit () {
-        auth.signup(this.credentials, 'profile')
+        auth.signup(this.credentials, 'pack')
       }
     },
 
