@@ -8,6 +8,11 @@ A CryptoKitties knock off with Doges. An additional feature on top of siring wil
 
 ## Contributing
 
+### Backend
+You'll need to set up the backend first for the frontend to function at all. Go set that up first.
+
+[DogeDate API Repo](https://github.com/tommycox/dogedate-backend)
+
 ### Getting Started
 
 Change directories to the frontend (which you cloned when setting up the backend):  
@@ -26,6 +31,3 @@ Login with:
 username: tommy.cox@protonmail.com
 password: quasar
 ```
-
-### Backend
-DogeDate API URL: https://github.com/tommycox/dogedate-backend
